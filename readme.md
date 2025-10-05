@@ -1,0 +1,2 @@
+sistema criado para ser ultilizado sem interface grafica, em maquinas de snacks,variedades, caixas misteriosas, sendo possivel tambem ser ultilizado em totens tipo auto-atendimento,
+, interface ainda sera melhorada, a principio foi criado para ser ultilizado sem tela, rodando em um mini computador, ou raspberry pi. 
