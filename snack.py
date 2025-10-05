@@ -7,6 +7,11 @@ import os
 produtos = [
     {'nome':'coca-cola' , 'preco': 5.00 , 'estoque' : 5 , 'imagem': 'imagens/coca-350.png.png'},
     {'nome' : 'batata-ruffles', 'preco': 8.00 , 'estoque' : 5, 'imagem': 'imagens/ruffles.png.png'},
+    {'nome' : 'agua-500ml' , 'preco': 5.00 , 'estoque' : 12, 'imagem': 'imagens/agua.png'},
+    {'nome' : 'amendoim-japones' , 'preco': 9.00 , 'estoque' : 10, 'imagem': 'imagens/amendoim.jpg'},
+    {'nome' : 'chocolate-80g' , 'preco': 10.00, 'estoque' : 17, 'imagem': 'imagens/lacta.png'},
+    
+
 ]
 
 carrinho = []
@@ -65,14 +70,14 @@ def finalizar_compra():
         janela_pagamento.destroy()
 
     # Botões de pagamento
-    tk.Button(janela_pagamento, text="💵 Dinheiro", width=20, command=pagar_dinheiro).pack(pady=5)
-    tk.Button(janela_pagamento, text="💳 Cartão", width=20, command=pagar_cartao).pack(pady=5)
-    tk.Button(janela_pagamento, text="📱 Pix", width=20, command=pagar_pix).pack(pady=5)
+    tk.Button(janela_pagamento, text="💵 Dinheiro", width=90, command=pagar_dinheiro).pack(pady=5)
+    tk.Button(janela_pagamento, text="💳 Cartão", width=90, command=pagar_cartao).pack(pady=5)
+    tk.Button(janela_pagamento, text="📱 Pix", width=90, command=pagar_pix).pack(pady=5)
 
 # --- Janela Principal ---
 janela = tk.Tk()
 janela.title('Máquina de Snacks')
-janela.geometry("800x600")
+janela.geometry("1920x1080")  # aqui altera o tamanho da tela que o programa abre
 
 frame_produtos = tk.Frame(janela)
 frame_produtos.pack(pady=20)
